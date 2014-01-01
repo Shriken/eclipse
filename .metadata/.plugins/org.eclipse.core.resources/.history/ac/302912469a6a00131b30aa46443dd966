@@ -1,0 +1,29 @@
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+
+public class Screen {
+	
+	private int width;
+	private int height;
+	
+	PerlinCanvas parent;
+	BufferedImage buffer;
+	Graphics renderGraphics;
+	
+	public Screen(PerlinCanvas parent) {
+		this.parent = parent;
+		Dimension size = parent.getPreferredSize();
+		width = size.width;
+		height = size.height;
+		buffer = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+		renderGraphics = buffer.getGraphics();
+	}
+	
+	public void render(float[][] data) {
+		if (data.length != height)
+			return;
+		if (data[0].length != height)
+			return;
+	}
+}

@@ -1,0 +1,18 @@
+import java.awt.image.BufferStrategy;
+
+import javax.swing.JFrame;
+
+public class Perlin {
+
+	public static void main(String[] args) {
+		
+		JFrame frame = new JFrame("Perlin");
+		PerlinCanvas canvas = new PerlinCanvas(frame);
+
+		frame.add(canvas);
+		frame.pack();
+		frame.setResizable(false);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+	}
+}

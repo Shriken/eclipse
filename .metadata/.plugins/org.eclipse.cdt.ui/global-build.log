@@ -1,0 +1,1591 @@
+15:58:12 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+15:58:16 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+make: Nothing to be done for `all'.
+16:00:45 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:03:48 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void render()’:
+../src/graphics.cpp:6:8: error: ‘clear’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+16:05:21 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘int main(int, char**)’:
+../src/graphics.cpp:7:31: error: declaration of C function ‘int main(int, char**)’ conflicts with
+In file included from ../src/graphics.cpp:2:0:
+../src/graphics.h:13:5: error: previous declaration ‘int main()’ here
+make: *** [src/graphics.o] Error 1
+16:05:28 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:07:12 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void clear()’:
+../src/graphics.cpp:28:10: error: ‘GL_QUAD’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+16:07:19 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:07:28 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+make: Nothing to be done for `all'.
+16:07:42 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void clear()’:
+../src/graphics.cpp:28:9: warning: statement is a reference, not call, to function ‘glBegin’ [-Waddress]
+../src/graphics.cpp:28:9: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:09:50 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:10:19 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void clear()’:
+../src/graphics.cpp:29:10: error: ‘GL_CLEAR_BUFFER_BIT’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+16:10:29 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:12:41 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘int main(int, char**)’:
+../src/graphics.cpp:13:41: error: ‘GL_Setup’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+16:13:22 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp:7:1: error: expected initializer before ‘int’
+make: *** [src/graphics.o] Error 1
+16:13:52 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp:7:1: error: expected initializer before ‘int’
+make: *** [src/graphics.o] Error 1
+16:13:59 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:15:20 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:15:48 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+make: Nothing to be done for `all'.
+16:16:24 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘int main(int, char**)’:
+../src/graphics.cpp:12:18: error: ‘main_loop_function’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+16:16:39 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:19:52 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:20:19 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void main_loop_function()’:
+../src/graphics.cpp:45:14: error: ‘Math’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+16:20:56 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void main_loop_function()’:
+../src/graphics.cpp:44:23: error: ‘sin’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+16:21:08 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:21:23 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:21:36 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:21:44 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:21:50 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:21:57 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:26:00 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘int main(int, char**)’:
+../src/graphics.cpp:14:22: error: ‘keyPress’ was not declared in this scope
+../src/graphics.cpp: In function ‘void keyboard(unsigned char, int, int)’:
+../src/graphics.cpp:22:21: error: ‘glutLeaveMainLoop’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+16:26:25 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void keyboard(unsigned char, int, int)’:
+../src/graphics.cpp:22:21: error: ‘glutLeaveMainLoop’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+16:27:41 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:30:00 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void mouseMove(int, int)’:
+../src/graphics.cpp:27:13: warning: variable ‘mouse_x’ set but not used [-Wunused-but-set-variable]
+../src/graphics.cpp:27:22: warning: variable ‘mouse_y’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:31:14 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void mouseMove(int, int)’:
+../src/graphics.cpp:27:13: warning: variable ‘mouse_x’ set but not used [-Wunused-but-set-variable]
+../src/graphics.cpp:27:22: warning: variable ‘mouse_y’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:31:48 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘int main(int, char**)’:
+../src/graphics.cpp:15:20: error: ‘mouseMove’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+16:31:58 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void mouseMove(int, int)’:
+../src/graphics.cpp:28:13: warning: variable ‘mouse_x’ set but not used [-Wunused-but-set-variable]
+../src/graphics.cpp:28:22: warning: variable ‘mouse_y’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:32:46 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void mouseMove(int, int)’:
+../src/graphics.cpp:34:12: error: invalid operands of types ‘_IO_FILE*’ and ‘const char [5]’ to binary ‘operator<<’
+../src/graphics.cpp:34:22: error: ‘endl’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+16:32:57 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void mouseMove(int, int)’:
+../src/graphics.cpp:34:2: error: ‘cout’ was not declared in this scope
+../src/graphics.cpp:34:20: error: ‘endl’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+16:33:24 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void mouseMove(int, int)’:
+../src/graphics.cpp:29:13: warning: variable ‘mouse_x’ set but not used [-Wunused-but-set-variable]
+../src/graphics.cpp:29:22: warning: variable ‘mouse_y’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:33:37 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+make: Nothing to be done for `all'.
+16:33:55 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void mouseMove(int, int)’:
+../src/graphics.cpp:29:13: warning: variable ‘mouse_x’ set but not used [-Wunused-but-set-variable]
+../src/graphics.cpp:29:22: warning: variable ‘mouse_y’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:34:45 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void mouseMove(int, int)’:
+../src/graphics.cpp:29:13: warning: variable ‘mouse_x’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:35:29 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void mouseMove(int, int)’:
+../src/graphics.cpp:29:13: warning: variable ‘mouse_x’ set but not used [-Wunused-but-set-variable]
+../src/graphics.cpp:29:22: warning: variable ‘mouse_y’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:36:52 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void mouseMove(int, int)’:
+../src/graphics.cpp:29:13: warning: variable ‘mouse_x’ set but not used [-Wunused-but-set-variable]
+../src/graphics.cpp:29:22: warning: variable ‘mouse_y’ set but not used [-Wunused-but-set-variable]
+In file included from ../src/graphics.cpp:4:0:
+../src/graphics.h: At global scope:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:19:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:20:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:37:22 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+In file included from ../src/graphics.cpp:4:0:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:38:33 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+In file included from ../src/graphics.cpp:4:0:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:39:06 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+In file included from ../src/graphics.cpp:4:0:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:40:27 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+In file included from ../src/graphics.cpp:4:0:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:41:10 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void main_loop_function()’:
+../src/graphics.cpp:41:20: error: ‘pi’ was not declared in this scope
+In file included from ../src/graphics.cpp:4:0:
+../src/graphics.h: At global scope:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+make: *** [src/graphics.o] Error 1
+16:41:19 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void main_loop_function()’:
+../src/graphics.cpp:41:20: error: ‘PI’ was not declared in this scope
+In file included from ../src/graphics.cpp:4:0:
+../src/graphics.h: At global scope:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+make: *** [src/graphics.o] Error 1
+16:41:29 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void main_loop_function()’:
+../src/graphics.cpp:41:20: error: ‘math’ was not declared in this scope
+In file included from ../src/graphics.cpp:4:0:
+../src/graphics.h: At global scope:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+make: *** [src/graphics.o] Error 1
+16:41:50 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+In file included from ../src/graphics.cpp:4:0:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:42:15 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+In file included from ../src/graphics.cpp:4:0:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+16:54:55 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+../src/actor.cpp: In member function ‘void Actor::update()’:
+../src/actor.cpp:17:18: error: ‘player’ was not declared in this scope
+../src/actor.cpp:17:44: error: ‘atan2’ was not declared in this scope
+make: *** [src/actor.o] Error 1
+16:55:19 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+../src/actor.cpp: In member function ‘void Actor::update()’:
+../src/actor.cpp:18:44: error: ‘atan2’ was not declared in this scope
+In file included from ../src/actor.cpp:9:0:
+../src/graphics.h: At global scope:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:19:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:20:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+make: *** [src/actor.o] Error 1
+16:56:39 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/actor.cpp:9:0:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:19:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:20:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+Finished building: ../src/actor.cpp
+ 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+In file included from ../src/graphics.cpp:1:0:
+../src/graphics.h:21:8: error: ‘Actor’ does not name a type
+../src/graphics.cpp: In function ‘int main(int, char**)’:
+../src/graphics.cpp:15:16: error: ‘game_setup’ was not declared in this scope
+../src/graphics.cpp: In function ‘void game_setup()’:
+../src/graphics.cpp:81:2: error: ‘player’ was not declared in this scope
+../src/graphics.cpp:82:1: error: expected ‘;’ before ‘}’ token
+../src/graphics.cpp: At global scope:
+../src/graphics.cpp:83:1: error: expected declaration before ‘}’ token
+In file included from ../src/graphics.cpp:1:0:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+make: *** [src/graphics.o] Error 1
+16:56:56 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+In file included from ../src/graphics.cpp:1:0:
+../src/graphics.h:21:8: error: ‘Actor’ does not name a type
+../src/graphics.cpp: In function ‘int main(int, char**)’:
+../src/graphics.cpp:15:16: error: ‘game_setup’ was not declared in this scope
+In file included from ../src/graphics.cpp:1:0:
+../src/graphics.h: At global scope:
+../src/graphics.h:18:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+make: *** [src/graphics.o] Error 1
+16:57:26 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp: In member function ‘void Actor::update()’:
+../src/actor.cpp:18:18: error: ‘player’ was not declared in this scope
+../src/actor.cpp: At global scope:
+../src/actor.cpp:11:6: error: redefinition of ‘void Actor::setPosition(float, float)’
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp:11:6: error: ‘void Actor::setPosition(float, float)’ previously defined here
+../src/actor.cpp:17:6: error: redefinition of ‘void Actor::update()’
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp:17:6: error: ‘void Actor::update()’ previously defined here
+In file included from ../src/actor.cpp:9:0:
+../src/graphics.h:23:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:24:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:14: warning: ‘player’ defined but not used [-Wunused-variable]
+make: *** [src/actor.o] Error 1
+16:57:35 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp: In member function ‘void Actor::update()’:
+../src/actor.cpp:18:18: error: ‘player’ was not declared in this scope
+../src/actor.cpp: At global scope:
+../src/actor.cpp:11:6: error: redefinition of ‘void Actor::setPosition(float, float)’
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp:11:6: error: ‘void Actor::setPosition(float, float)’ previously defined here
+../src/actor.cpp:17:6: error: redefinition of ‘void Actor::update()’
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp:17:6: error: ‘void Actor::update()’ previously defined here
+In file included from ../src/actor.cpp:9:0:
+../src/graphics.h:24:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:14: warning: ‘player’ defined but not used [-Wunused-variable]
+make: *** [src/actor.o] Error 1
+16:58:25 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp:17:6: error: prototype for ‘void Actor::update(Actor)’ does not match any in class ‘Actor’
+In file included from ../src/actor.cpp:8:0:
+../src/actor.h:16:8: error: candidate is: void Actor::update()
+../src/actor.cpp:11:6: error: redefinition of ‘void Actor::setPosition(float, float)’
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp:11:6: error: ‘void Actor::setPosition(float, float)’ previously defined here
+../src/actor.cpp:17:6: error: prototype for ‘void Actor::update(Actor)’ does not match any in class ‘Actor’
+In file included from ../src/actor.cpp:8:0:
+../src/actor.h:16:8: error: candidate is: void Actor::update()
+In file included from ../src/actor.cpp:9:0:
+../src/graphics.h:24:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:14: warning: ‘player’ defined but not used [-Wunused-variable]
+make: *** [src/actor.o] Error 1
+16:58:54 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp:17:6: error: prototype for ‘void Actor::update(Actor)’ does not match any in class ‘Actor’
+In file included from ../src/actor.cpp:8:0:
+../src/actor.h:16:8: error: candidate is: void Actor::update()
+../src/actor.cpp:11:6: error: redefinition of ‘void Actor::setPosition(float, float)’
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp:11:6: error: ‘void Actor::setPosition(float, float)’ previously defined here
+../src/actor.cpp:17:6: error: prototype for ‘void Actor::update(Actor)’ does not match any in class ‘Actor’
+In file included from ../src/actor.cpp:8:0:
+../src/actor.h:16:8: error: candidate is: void Actor::update()
+In file included from ../src/actor.cpp:9:0:
+../src/graphics.h:24:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:14: warning: ‘player’ defined but not used [-Wunused-variable]
+make: *** [src/actor.o] Error 1
+16:59:02 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+../src/actor.cpp:11:6: error: redefinition of ‘void Actor::setPosition(float, float)’
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp:11:6: error: ‘void Actor::setPosition(float, float)’ previously defined here
+../src/actor.cpp:17:6: error: redefinition of ‘void Actor::update(Actor)’
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp:17:6: error: ‘void Actor::update(Actor)’ previously defined here
+In file included from ../src/actor.cpp:9:0:
+../src/graphics.h:24:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:14: warning: ‘player’ defined but not used [-Wunused-variable]
+make: *** [src/actor.o] Error 1
+16:59:23 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp:11:36: error: ISO C++ forbids declaration of ‘setPosition’ with no type [-fpermissive]
+../src/actor.cpp:11:1: error: prototype for ‘int Actor::setPosition(float, float)’ does not match any in class ‘Actor’
+In file included from ../src/actor.cpp:8:0:
+../src/actor.h:15:8: error: candidate is: void Actor::setPosition(float, float)
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:9:
+../src/actor.cpp:17:27: error: ISO C++ forbids declaration of ‘update’ with no type [-fpermissive]
+../src/actor.cpp:17:1: error: prototype for ‘int Actor::update(Actor)’ does not match any in class ‘Actor’
+In file included from ../src/actor.cpp:8:0:
+../src/actor.h:16:8: error: candidate is: void Actor::update(Actor)
+../src/actor.cpp:11:36: error: ISO C++ forbids declaration of ‘setPosition’ with no type [-fpermissive]
+../src/actor.cpp:11:1: error: prototype for ‘int Actor::setPosition(float, float)’ does not match any in class ‘Actor’
+In file included from ../src/actor.cpp:8:0:
+../src/actor.h:15:8: error: candidate is: void Actor::setPosition(float, float)
+../src/actor.cpp:17:27: error: ISO C++ forbids declaration of ‘update’ with no type [-fpermissive]
+../src/actor.cpp:17:1: error: prototype for ‘int Actor::update(Actor)’ does not match any in class ‘Actor’
+In file included from ../src/actor.cpp:8:0:
+../src/actor.h:16:8: error: candidate is: void Actor::update(Actor)
+In file included from ../src/actor.cpp:9:0:
+../src/graphics.h:24:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:14: warning: ‘player’ defined but not used [-Wunused-variable]
+make: *** [src/actor.o] Error 1
+17:00:25 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+../src/actor.cpp:10:7: error: redefinition of ‘class Actor’
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:8:
+../src/actor.cpp:10:7: error: previous definition of ‘class Actor’
+../src/actor.cpp:18:6: error: redefinition of ‘void Actor::setPosition(float, float)’
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:8:
+../src/actor.cpp:18:6: error: ‘void Actor::setPosition(float, float)’ previously defined here
+../src/actor.cpp:24:6: error: redefinition of ‘void Actor::update(Actor)’
+In file included from ../src/graphics.h:14:0,
+                 from ../src/actor.cpp:8:
+../src/actor.cpp:24:6: error: ‘void Actor::update(Actor)’ previously defined here
+In file included from ../src/actor.cpp:8:0:
+../src/graphics.h:24:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:14: warning: ‘player’ defined but not used [-Wunused-variable]
+make: *** [src/actor.o] Error 1
+17:00:42 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/actor.cpp:8:0:
+../src/graphics.h:26:8: error: ‘Actor’ does not name a type
+../src/graphics.h:23:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:24:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+make: *** [src/actor.o] Error 1
+17:01:11 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/actor.cpp:8:0:
+../src/graphics.h:14:19: fatal error: actor.h: No such file or directory
+compilation terminated.
+make: *** [src/actor.o] Error 1
+17:01:26 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/actor.cpp:8:0:
+../src/graphics.h:24:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:14: warning: ‘player’ defined but not used [-Wunused-variable]
+Finished building: ../src/actor.cpp
+ 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+In file included from ../src/graphics.cpp:1:0:
+../src/graphics.h:24:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:14: warning: ‘player’ defined but not used [-Wunused-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:06:36 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/actor.cpp:8:0:
+../src/graphics.h:22:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:23:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:24:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:14: warning: ‘player’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:13: warning: ‘wDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:13: warning: ‘aDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:28:13: warning: ‘sDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:29:13: warning: ‘dDown’ defined but not used [-Wunused-variable]
+Finished building: ../src/actor.cpp
+ 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:06:52 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:07:06 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+make: Nothing to be done for `all'.
+17:09:40 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘int main(int, char**)’:
+../src/graphics.cpp:13:24: error: ‘keyboardUp’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+17:09:50 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/actor.cpp:8:0:
+../src/graphics.h:23:14: warning: ‘angle’ defined but not used [-Wunused-variable]
+../src/graphics.h:24:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:14: warning: ‘player’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:13: warning: ‘wDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:28:13: warning: ‘aDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:29:13: warning: ‘sDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:30:13: warning: ‘dDown’ defined but not used [-Wunused-variable]
+Finished building: ../src/actor.cpp
+ 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:10:50 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:11:31 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:12:06 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:12:40 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:13:09 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+make: Nothing to be done for `all'.
+17:13:27 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:16:05 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/actor.cpp:8:0:
+../src/graphics.h:23:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:24:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:14: warning: ‘player’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:13: warning: ‘wDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:13: warning: ‘aDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:28:13: warning: ‘sDown’ defined but not used [-Wunused-variable]
+Finished building: ../src/actor.cpp
+ 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.h:29:13: warning: ‘dDown’ defined but not used [-Wunused-variable]
+../src/graphics.cpp: In function ‘void main_loop_function()’:
+../src/graphics.cpp:92:21: error: ‘drawActor’ was not declared in this scope
+make: *** [src/graphics.o] Error 1
+17:16:21 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/actor.cpp:8:0:
+../src/graphics.h:24:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:14: warning: ‘player’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:13: warning: ‘wDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:28:13: warning: ‘aDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:29:13: warning: ‘sDown’ defined but not used [-Wunused-variable]
+Finished building: ../src/actor.cpp
+ 
+Building file: ../src/graphics.cpp
+../src/graphics.h:30:13: warning: ‘dDown’ defined but not used [-Wunused-variable]
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:18:06 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:18:30 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:21:54 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/actor.cpp:8:0:
+../src/graphics.h:24:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:14: warning: ‘player’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:13: warning: ‘wDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:28:13: warning: ‘aDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:29:13: warning: ‘sDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:30:13: warning: ‘dDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:31:14: warning: ‘scale’ defined but not used [-Wunused-variable]
+Finished building: ../src/actor.cpp
+ 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:22:22 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:23:09 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/actor.cpp:8:0:
+../src/graphics.h:24:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:25:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:26:14: warning: ‘player’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:13: warning: ‘wDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:28:13: warning: ‘aDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:29:13: warning: ‘sDown’ defined but not used [-Wunused-variable]
+Finished building: ../src/actor.cpp
+ 
+Building file: ../src/graphics.cpp
+../src/graphics.h:30:13: warning: ‘dDown’ defined but not used [-Wunused-variable]
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.h:31:14: warning: ‘scale’ defined but not used [-Wunused-variable]
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:23:25 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+make: Nothing to be done for `all'.
+17:23:40 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:25:08 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:25:26 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:25:49 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:26:09 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:26:25 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:26:39 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:26:51 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:27:04 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:27:12 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+make: Nothing to be done for `all'.
+17:27:31 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+make: Nothing to be done for `all'.
+17:27:45 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:28:04 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:28:19 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:28:28 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:29:09 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+make: Nothing to be done for `all'.
+17:29:34 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:29:42 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:30:06 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:30:33 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:31:08 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:34:22 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:34:39 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:35:35 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:36:19 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:37:01 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:37:20 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:37:33 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+17:37:45 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+18:07:14 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/actor.cpp:8:0:
+../src/graphics.h:26:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:28:14: warning: ‘player’ defined but not used [-Wunused-variable]
+../src/graphics.h:29:13: warning: ‘wDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:30:13: warning: ‘aDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:31:13: warning: ‘sDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:32:13: warning: ‘dDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:33:14: warning: ‘scale’ defined but not used [-Wunused-variable]
+Finished building: ../src/actor.cpp
+ 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+18:33:59 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/actor.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/actor.d" -MT"src/actor.d" -o "src/actor.o" "../src/actor.cpp"
+In file included from ../src/actor.cpp:8:0:
+../src/graphics.h:26:12: warning: ‘mouse_x’ defined but not used [-Wunused-variable]
+../src/graphics.h:27:12: warning: ‘mouse_y’ defined but not used [-Wunused-variable]
+../src/graphics.h:28:14: warning: ‘player’ defined but not used [-Wunused-variable]
+../src/graphics.h:29:13: warning: ‘wDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:30:13: warning: ‘aDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:31:13: warning: ‘sDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:32:13: warning: ‘dDown’ defined but not used [-Wunused-variable]
+../src/graphics.h:33:14: warning: ‘scale’ defined but not used [-Wunused-variable]
+Finished building: ../src/actor.cpp
+ 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+18:35:13 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+18:35:30 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+18:35:34 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+make: Nothing to be done for `all'.
+18:35:44 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+18:35:48 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+make: Nothing to be done for `all'.
+18:36:08 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+../src/graphics.cpp: In function ‘void main_loop_function()’:
+../src/graphics.cpp:77:5: error: expected ‘;’ before ‘if’
+make: *** [src/graphics.o] Error 1
+18:36:26 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+18:38:12 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 

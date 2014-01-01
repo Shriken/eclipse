@@ -1,0 +1,18 @@
+/*
+ * actor.cpp
+ *
+ *  Created on: Dec 20, 2013
+ *      Author: zane
+ */
+
+#include "actor.h"
+
+void Actor::setPosition(float x, float y) {
+	this->x = x;
+	this->y = y;
+	this->heading = 0;
+}
+
+void Actor::update() {
+
+}

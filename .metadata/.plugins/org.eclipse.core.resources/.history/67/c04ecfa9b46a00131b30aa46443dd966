@@ -1,0 +1,146 @@
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
+
+public class Perlin {
+	
+	public static int WIDTH = 800;
+	public static int HEIGHT = 600;
+	public static int DIMENSIONS = 2;
+
+	public static void main(String[] args) {
+		
+		JFrame frame = new JFrame("Perlin");
+		Canvas canvas = new PerlinCanvas(frame);
+		Dimension size = new Dimension(WIDTH, HEIGHT);
+
+		canvas.setPreferredSize(size);
+		canvas.setMinimumSize(size);
+		canvas.setMaximumSize(size);
+
+		frame.add(canvas);
+		frame.pack();
+		frame.setResizable(false);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+		
+		if (DIMENSIONS == 1) {
+			double[] noise = generateNoise1d(WIDTH);
+			while (true)
+				render1d(canvas, noise);
+		} else if (DIMENSIONS == 2) {
+			double[][] noise = generateNoise2d(WIDTH, HEIGHT);
+			render2d(canvas, noise);
+		}
+	}
+	
+	public static double[] generateNoise1d(int width) {
+
+		double[] noise = new double[width];
+		double persistence = 0.25;
+		int depth = 6;
+		
+		for (int d = 0; d < depth; d++) {
+			double frequency = 8 * Math.pow(2, d);
+			double[] keys = new double[(int)frequency];
+			double[] oNoise = new double[width];
+			
+			for (int i = 0; i < frequency; i++)
+				keys[i] = Math.random();
+			for (int i = 0; i < width; i++) {
+				int index = (int) (i * frequency / width);
+				if (index+1 >= (int)frequency)
+					oNoise[i] = keys[index];
+				else 
+					oNoise[i] = cosInterpolate(keys[index],
+					                           keys[index+1],
+					                           (i % frequency) / frequency);
+				noise[i] = oNoise[i] * Math.pow(persistence, d) * 750;
+			}
+		}
+		
+		return noise;
+	}
+	
+	public static double[][] generateNoise2d(int width, int height) {
+
+		double[][] noise = new double[height][width];
+		double persistence = 0.5;
+		int depth = 6;
+
+		for (int d = 0; d < depth; d++) {
+			double frequency = 8 * Math.pow(2, d);
+			double[][] keys = new double[(int) frequency][(int)frequency];
+			double[][] oNoise = new double[height][width];
+
+			// generate key points
+			for (int i = 0; i < frequency; i++)
+				for (int j = 0; j < frequency; j++)
+					keys[i][j] = Math.random();
+			for (int i = 0; i < height; i++) {
+				for (int j = 0; j < width; j++) {
+					int index = (int) (i * frequency / height);
+					int jndex = (int) (j * frequency / width);
+					int indexp = index+1 == frequency ? index : index+1;
+					int jndexp = jndex+1 == frequency ? jndex : jndex+1;
+					double v1 = keys[index][jndex];
+					double v2 = keys[index][jndexp];
+					double v3 = keys[indexp][jndex];
+					double v4 = keys[indexp][jndexp];
+					
+					double i1 = cosInterpolate(v1, v2, (j % frequency) / frequency);
+					double i2 = cosInterpolate(v3, v4, (j % frequency) / frequency);
+					
+					oNoise[i][j] = cosInterpolate(i1, i2, (i % frequency) / frequency);
+					noise[i][j] += oNoise[i][j] * Math.pow(persistence, d) / 2;
+				}
+			}
+		}
+
+		return noise;
+	}
+	
+	public static double cosInterpolate(double a, double b, double x) {
+		double ft = x * Math.PI;
+		double f = (1 - Math.cos(ft)) * .5;
+	
+		return  a*(1-f) + b*f;
+	}
+	
+	public static void render1d(Canvas canvas, double[] data) {
+		if (data.length != WIDTH)
+			return;
+
+		Graphics g = canvas.getGraphics();
+		
+		for (int i = 0; i < WIDTH; i++) {
+			g.setColor(new Color(0f, 0f, (float)data[i]));
+			g.fillRect(i, 0, 1, HEIGHT);
+		}
+	}
+	
+	public static void render2d(Canvas canvas, double[][] data) {
+		if (data.length != HEIGHT)
+			return;
+		if (data[0].length != WIDTH)
+			return;
+
+		Graphics g = canvas.getGraphics();
+		
+		for (int i = 0; i < HEIGHT; i++) {
+			for (int j = 0; j < WIDTH; j++) {
+				try {
+					g.setColor(new Color(0f, 0f, (float)data[i][j]));
+				} catch (Exception e) {
+					System.out.println(data[i][j]);
+					e.printStackTrace();
+					System.exit(-1);
+				}
+				g.fillRect(j, i, 1, 1);
+			}
+		}
+	}
+}

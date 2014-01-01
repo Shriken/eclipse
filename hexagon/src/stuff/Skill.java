@@ -1,0 +1,31 @@
+package stuff;
+
+public class Skill {
+
+	String name;
+	int modifier;
+	int difficulty;
+	
+	public Skill(String name, int modifier, int difficulty) {
+		this.name = name;
+		this.modifier = modifier;
+		this.difficulty = difficulty;
+	}
+	
+	public int cost() {
+		int mod = modifier + difficulty;
+		
+		if (mod < 4)
+			return 2 ^ mod;
+		else
+			return 8 * (mod - 2);
+	}
+
+	public Skill clone() {
+		return new Skill(name, modifier, difficulty);
+	}
+	
+	public String toString() {
+		return name + " " + modifier + " " + difficulty;
+	}
+}

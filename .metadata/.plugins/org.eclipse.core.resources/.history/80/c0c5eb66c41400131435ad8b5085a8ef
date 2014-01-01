@@ -1,0 +1,101 @@
+package stuff;
+
+import java.awt.Canvas;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.image.BufferStrategy;
+
+import javax.swing.JFrame;
+
+public class HexagonComponent extends Canvas implements Runnable {
+	
+	private static final long serialVersionUID = 1L;
+	
+	private static final int WIDTH = 1000;
+	private static final int HEIGHT = 600;
+	private static final int SCALE = 1;
+	
+	static JFrame frame;
+	
+	Thread thread;
+	
+	Game game;
+	Screen screen;
+	
+	public HexagonComponent() {
+		Dimension size = new Dimension(WIDTH*SCALE, HEIGHT*SCALE);
+		frame.setPreferredSize(size);
+		frame.setMinimumSize(size);
+		frame.setMaximumSize(size);
+		
+		this.setPreferredSize(size);
+		
+		running = false;
+		game = new Game();;
+		screen = new Screen(this, WIDTH, HEIGHT);
+
+		frame.addKeyListener(game);
+		addKeyListener(game);
+	}
+	
+	public synchronized void start() {
+		if (running) return;
+		game.running = true;
+		thread = new Thread(this);
+		System.out.println("start");
+		thread.start();
+	}
+	
+	public void run() {
+		while (game.running) {
+			tick();
+			render();
+		}
+	}
+	
+	public void tick() {
+		game.tick();
+	}
+	
+	public void render() {
+		screen.render(game);
+		
+		if (getBufferStrategy() == null)
+			this.createBufferStrategy(2);
+		
+		BufferStrategy bs = this.getBufferStrategy();
+		Graphics g = bs.getDrawGraphics();
+		
+		g.drawImage(screen.image, 0, 0, this);
+		
+		bs.show();
+	}
+	
+	public synchronized void stop() {
+		if (!game.running) return;
+		game.running = false;
+		System.out.println("stop");
+		try {
+			thread.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public Dimension getPreferredSize() {
+		return new Dimension(WIDTH*SCALE, HEIGHT*SCALE);
+	}
+	
+	public static void main(String[] args) {
+		frame = new JFrame("Hexagon!");
+		HexagonComponent game = new HexagonComponent();
+		
+		frame.add(game);
+		frame.pack();
+		frame.setResizable(false);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+		
+		game.start();
+	}
+}

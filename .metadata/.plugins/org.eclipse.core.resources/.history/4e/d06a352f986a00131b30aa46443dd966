@@ -1,0 +1,13 @@
+import javax.swing.JFrame;
+
+public class Perlin {
+	
+	static PerlinCanvas canvas;
+
+	public static void main(String[] args) {
+		
+		JFrame frame = new JFrame("Perlin");
+
+		frame.addComponent()
+	}
+}

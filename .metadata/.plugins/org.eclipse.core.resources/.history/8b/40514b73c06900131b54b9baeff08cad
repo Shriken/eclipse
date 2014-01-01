@@ -1,0 +1,19 @@
+/*
+ * actor.cpp
+ *
+ *  Created on: Dec 20, 2013
+ *      Author: zane
+ */
+
+#include "actor.h"
+
+Actor::Actor(float x, float y) {
+	x = 0;
+	y = 0;
+
+}
+
+Actor::~Actor() {
+	// TODO Auto-generated destructor stub
+}
+

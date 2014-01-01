@@ -1,0 +1,12 @@
+package stuff;
+
+public class Skill {
+	
+	private static final int EASY = 0;
+	private static final int AVERAGE = 1;
+	private static final int HARD = 2;
+
+	String name;
+	int modifier;
+	int difficulty;
+}

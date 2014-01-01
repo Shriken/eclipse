@@ -1,0 +1,15 @@
+18:38:12 **** Incremental Build of configuration Debug for project graphics ****
+make all 
+Building file: ../src/graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graphics.d" -MT"src/graphics.d" -o "src/graphics.o" "../src/graphics.cpp"
+Finished building: ../src/graphics.cpp
+ 
+Building target: graphics
+Invoking: Cross G++ Linker
+g++  -o "graphics"  ./src/actor.o ./src/graphics.o   -lglut -lGLU
+Finished building target: graphics
+ 
+
+18:38:13 Build Finished (took 618ms)
+

@@ -1,0 +1,115 @@
+#include "graphics.h"
+#define window_width  1000
+#define window_height 800
+
+// Initialize GLUT and start main loop
+int main(int argc, char** argv) {
+    glutInit(&argc, argv);
+    glutInitWindowSize(window_width, window_height);
+    glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
+    glutCreateWindow("GLUT Example!!!");
+    glutIdleFunc(main_loop_function);
+    glutKeyboardFunc(keyboard);
+    glutKeyboardUpFunc(keyboardUp);
+    glutPassiveMotionFunc(mouseMove);
+    GL_Setup(window_width, window_height);
+    game_setup();
+    glutMainLoop();
+}
+
+void keyboard(unsigned char key, int x, int y) {
+	switch(key) {
+	case 'q':
+		exit(0);
+	case 'w':
+		wDown = true;
+		break;
+	case 'a':
+		aDown = true;
+		break;
+	case 's':
+		sDown = true;
+		break;
+	case 'd':
+		dDown = true;
+		break;
+	}
+}
+
+void keyboardUp(unsigned char key, int x, int y) {
+	switch(key) {
+	case 'q':
+		exit(0);
+	case 'w':
+		wDown = false;
+		break;
+	case 'a':
+		aDown = false;
+		break;
+	case 's':
+		sDown = false;
+		break;
+	case 'd':
+		dDown = false;
+		break;
+	}
+}
+
+void mouseMove(int x, int y) {
+	mouse_x = x * tan(M_PI / 4);
+	mouse_y = y * tan(M_PI / 4);
+}
+
+// Main loop
+void main_loop_function() {
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glLoadIdentity();
+
+    player.heading = atan2(mouse_x - (player.x + window_width / 2),
+    					   mouse_y - (player.y + window_height / 2));
+    player.heading *= 180 / M_PI;
+
+    if (wDown)
+    	player.y -= 5;
+    if (aDown)
+    	player.x -= 5;
+    if (sDown)
+    	player.y += 5;
+    if (dDown)
+    	player.x += 5;
+
+    // Multiply in translation matrix
+    glTranslatef(0, 0, -30);
+    // Render player
+    drawActor(player);
+    // Swap buffers (color buffers, makes previous render visible)
+    glutSwapBuffers();
+}
+
+void drawActor(Actor actor) {
+    glTranslatef(actor.x * scale, -actor.y * scale, 0);
+    glRotatef(actor.heading, 0, 0, 1);
+    glBegin(GL_QUADS);
+		glColor3ub(255, 000, 000);
+		glVertex2f(-1, 1);
+		glColor3ub(000, 255, 000);
+		glVertex2f(1, 1);
+		glColor3ub(000, 000, 255);
+		glVertex2f(1, -1);
+		glColor3ub(255, 255, 000);
+		glVertex2f(-1, -1);
+    glEnd();
+}
+
+// Initialze OpenGL perspective matrix
+void GL_Setup(int width, int height) {
+    glViewport(0, 0, width, height);
+    glMatrixMode(GL_PROJECTION);
+    glEnable(GL_DEPTH_TEST);
+    gluPerspective(45, (float) width / height, .1, 100);
+    glMatrixMode(GL_MODELVIEW);
+}
+
+void game_setup() {
+	scale = 0.035;
+}

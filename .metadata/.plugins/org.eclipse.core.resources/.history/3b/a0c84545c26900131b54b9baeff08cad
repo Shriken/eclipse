@@ -1,0 +1,29 @@
+/*
+ * graphics.h
+ *
+ *  Created on: Dec 20, 2013
+ *      Author: zane
+ */
+
+#ifndef GRAPHICS_H_
+#define GRAPHICS_H_
+
+#include <GL/glut.h>
+#include <math.h>
+#include <iostream>
+#include <actor.h>
+
+void clear();
+void render();
+void keyboard(unsigned char, int, int);
+void mouseMove(int, int);
+void main_loop_function();
+void GL_Setup(int, int);
+void game_setup();
+
+static float angle;
+static int mouse_x;
+static int mouse_y;
+static Actor player;
+
+#endif /* GRAPHICS_H_ */

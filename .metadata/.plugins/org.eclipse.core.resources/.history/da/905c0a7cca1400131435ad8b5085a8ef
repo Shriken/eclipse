@@ -1,0 +1,22 @@
+package stuff;
+
+public class Skill {
+	
+	private static final int EASY = 0;
+	private static final int AVERAGE = 1;
+	private static final int HARD = 2;
+
+	String name;
+	int modifier;
+	int difficulty;
+	
+	public Skill(String name, int modifier, int difficulty) {
+		this.name = name;
+		this.modifier = modifier;
+		this.difficulty = difficulty;
+	}
+	
+	public int cost() {
+		for (int m=0; m < modifier && m < )
+	}
+}

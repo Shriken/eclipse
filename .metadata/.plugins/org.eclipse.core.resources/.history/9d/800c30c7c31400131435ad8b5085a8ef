@@ -1,0 +1,56 @@
+package stuff;
+
+public class Unit {
+	
+	private static final int[] abilityCosts =
+			new int[]{-20, -15, -10, 0, 10, 20, 30, 45, 60, 80, 100};
+
+	int characterPoints;
+	
+	int[] attributes;
+	
+	//advantages
+	boolean amibdexterity;
+	boolean combatReflexes;
+	boolean peripheralVision;
+	int toughness;
+	
+	//skill modifiers
+	
+	
+	public Unit(int pointTotal) {
+		characterPoints = pointTotal;
+		
+		for (int a : attributes)
+			a = 10;
+	}
+	
+	public boolean setAbility(int ability, int score) {
+		if (score < 7)
+			return false;
+		
+		int curScore = attributes[ability];
+		int cost = 0;
+		
+		if (curScore > 17) {
+			cost -= (curScore - 17) * 25;
+			curScore = 17;
+		}
+		
+		cost -= abilityCosts[curScore - 7];
+		
+		if (score > 17) {
+			cost += (score- 17) * 25;
+			score = 17;
+		}
+		
+		cost += abilityCosts[score - 7];
+		
+		if (cost > characterPoints)
+			return false;
+		
+		characterPoints -= cost;
+		
+		return true;
+	}
+}

@@ -1,0 +1,102 @@
+
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+
+import stuff.Board;
+import stuff.Game;
+import stuff.HexagonComponent;
+import stuff.Menu;
+import stuff.Tile;
+import stuff.Util;
+
+import java.io.File;
+import java.io.IOException;
+
+public class Screen {
+	
+	private int width;
+	private int height;
+	
+	PerlinCanvas parent;
+	
+	BufferedImage image;
+	
+	Graphics renderGraphics;
+	
+	BufferedImage hex;
+	BufferedImage selectedHex;
+	BufferedImage highlightHex;
+	BufferedImage unit;
+	
+	Font font;
+	
+	public Screen(PerlinCanvas parent, int width, int height) {
+		this.parent = parent;
+		
+		image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+		renderGraphics = image.getGraphics();
+		
+		font = new Font(Font.SANS_SERIF, Font.PLAIN, 20);
+		renderGraphics.setFont(font);
+	}
+	
+	public void render(Game game) {
+		if (game.curPerspective == Game.CHARACTER_CREATION) {
+			renderCharacterCreation(game);
+		} else if (game.curPerspective == Game.BOARD) {
+			renderBoard(game);
+		}
+	}
+
+	private void renderCharacterCreation(Game game) {
+		renderGraphics.setColor(Color.BLACK);
+		renderGraphics.fillRect(0, 0, width, height);
+		
+		renderGraphics.setColor(Color.WHITE);
+		Menu m = game.characterCreationMenu;
+		for (int i=0; i<m.options.length; i++) {
+			String s = m.options[i];
+			if (i == m.selection)
+				s = "> " + s;
+			
+			renderGraphics.drawString(s, 0, (i+1) * 25);
+		}
+	}
+	
+	private void renderBoard(Game game) {
+		//draw background
+		renderGraphics.setColor(Color.BLACK);
+		renderGraphics.fillRect(0, 0, width, height);
+		renderGraphics.setColor(Color.RED);
+		renderGraphics.fillRect(width - 200, 0, 200, height);
+		
+		Board board = game.board;
+		Tile[][] tiles = board.tiles;
+		
+		//draw board
+		for (int i=0; i<tiles.length; i++) {
+			for (int j=0; j<tiles[i].length; j++) {
+				int x = 5 + j * 56 + (i % 2) * 28;
+				int y = 5 + i * 15;
+				
+				//draw highlighted tile
+				if (game.highlighting && j == board.highlightX && i == board.highlightY)
+					renderGraphics.drawImage(highlightHex, x, y, parent);
+				//draw cursor tile
+				else if (j == board.cursorX && i == board.cursorY)
+					renderGraphics.drawImage(selectedHex, x, y, parent);
+				//draw tile
+				else
+					renderGraphics.drawImage(hex, x, y, parent);
+				
+				//draw units
+				if (game.board.tiles[i][j].occupant != null)
+					renderGraphics.drawImage(unit, x, y, parent);
+			}
+		}
+	}
+}

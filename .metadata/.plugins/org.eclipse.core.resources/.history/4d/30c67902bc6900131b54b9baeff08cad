@@ -1,0 +1,15 @@
+/*
+ * graphics.h
+ *
+ *  Created on: Dec 20, 2013
+ *      Author: zane
+ */
+
+#ifndef GRAPHICS_H_
+#define GRAPHICS_H_
+
+void clear();
+void render();
+void GL_Setup(int, int);
+
+#endif /* GRAPHICS_H_ */

@@ -1,0 +1,102 @@
+package stuff;
+
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+public class Game implements KeyListener, MouseListener {
+	
+	static final int CHARACTER_CREATION = 0;
+	static final int BOARD = 1;
+	
+	boolean running;
+	
+	Board board;
+	
+	int move;
+
+	boolean highlighting;
+	
+	boolean shouldMovePiece;
+	boolean shouldHighlight;
+	
+	int curScreen;
+
+	public Game() {
+		board = new Board();
+		
+		curScreen = BOARD;
+		
+		move = -1;
+	}
+	
+	public void tick() {
+		if (curScreen == CHARACTER_CREATION) {
+			
+		} else if (curScreen == BOARD) {
+			if (move != -1) {
+				board.moveSelection(move);
+				move = -1;
+			}
+			
+			if (shouldMovePiece) {
+				board.movePiece();
+				shouldMovePiece = false;
+				highlighting = false;
+			}
+			
+			if (shouldHighlight) {
+				board.highlight();
+				shouldHighlight = false;
+				highlighting = true;
+			}
+		}
+	}
+	
+	public void keyPressed(KeyEvent e) {
+		if (e.getKeyChar() == 'q' && e.isControlDown())
+			running = false;
+			
+		if (curScreen == CHARACTER_CREATION) {
+			
+		} else if (curScreen == BOARD) {
+			char[] moves = new char[]{'q', 'w', 'e', 'a', 's', 'd'};
+			
+			if (contains(moves, e.getKeyChar()))
+				move = find(moves, e.getKeyChar());
+			
+			if (e.getKeyChar() == ' ')
+				if (highlighting)
+					shouldMovePiece = true;
+				else
+					shouldHighlight = true;
+		}
+	}
+	
+	//check if moves contains x
+	public boolean contains(char[] moves, char x) {
+		for (char y : moves)
+			if (y == x)
+				return true;
+		
+		return false;
+	}
+	
+	//return index of x in moves
+	public int find(char[] moves, char x) {
+		for (int i=0; i<moves.length; i++)
+			if (x == moves[i])
+				return i;
+		
+		return -1;
+	}
+	
+	public void keyReleased(KeyEvent e) {}
+	public void mousePressed(MouseEvent e) {}
+	public void mouseReleased(MouseEvent e) {}
+	public void mouseEntered(MouseEvent arg0) {}
+	public void mouseExited(MouseEvent arg0) {}
+	public void mouseClicked(MouseEvent e) {}
+	public void keyTyped(KeyEvent e) {}
+}

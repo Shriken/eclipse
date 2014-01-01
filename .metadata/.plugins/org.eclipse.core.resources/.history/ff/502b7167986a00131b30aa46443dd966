@@ -1,0 +1,14 @@
+import javax.swing.JFrame;
+import java.awt.Canvas;
+
+public class PerlinCanvas extends Canvas {
+
+	private static final long serialVersionUID = 1L;	
+	static final int WIDTH = 800;
+	static final int HEIGHT = 600;
+
+	public PerlinCanvas(JFrame frame) {
+		Dimension size = new Dimension(WIDTH, HEIGHT);
+		setPreferredSize(size);
+	}
+}

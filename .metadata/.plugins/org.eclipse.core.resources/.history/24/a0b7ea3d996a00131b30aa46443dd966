@@ -1,0 +1,24 @@
+
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+
+import java.io.File;
+import java.io.IOException;
+
+public class Screen {
+	
+	private int width;
+	private int height;
+	
+	PerlinCanvas parent;
+	Graphics renderGraphics;
+	
+	public Screen(PerlinCanvas parent, int width, int height) {
+		this.parent = parent;
+		
+	}
+}

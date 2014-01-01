@@ -1,0 +1,17 @@
+/*
+ * actor.h
+ *
+ *  Created on: Dec 20, 2013
+ *      Author: zane
+ */
+
+#ifndef ACTOR_H_
+#define ACTOR_H_
+
+class Actor {
+public:
+	Actor();
+	virtual ~Actor();
+};
+
+#endif /* ACTOR_H_ */

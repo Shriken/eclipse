@@ -1,0 +1,14 @@
+/*
+ * actor.cpp
+ *
+ *  Created on: Dec 20, 2013
+ *      Author: zane
+ */
+
+#include "graphics.h"
+#include "actor.h"
+
+
+void Actor::update(Actor target) {
+	heading = atan2(target.x - x, target.y - y);
+}

@@ -1,0 +1,7 @@
+import java.awt.Canvas;
+
+public class PerlinCanvas extends Canvas {
+
+	private static final long serialVersionUID = 1L;
+
+}

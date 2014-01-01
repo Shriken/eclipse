@@ -1,0 +1,824 @@
+!SESSION 2013-09-03 13:29:38.227 -----------------------------------------------
+eclipse.buildId=I20120502-2000
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-09-03 19:08:57.323
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:529)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.SourceMethod.isConstructor(SourceMethod.java:216)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendMethodLabel(JavaElementLabelComposer.java:378)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendElementLabel(JavaElementLabelComposer.java:270)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:518)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:491)
+	at org.eclipse.jdt.ui.JavaElementLabels.getTextLabel(JavaElementLabels.java:395)
+	at org.eclipse.jdt.ui.JavaElementLabelProvider.getText(JavaElementLabelProvider.java:255)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getMethodBreakpointText(JDIModelPresentation.java:1737)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getBreakpointText(JDIModelPresentation.java:1495)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getText(JDIModelPresentation.java:229)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager$2.run(JavaDebugOptionsManager.java:733)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.updateBreakpointMessages(JavaDebugOptionsManager.java:748)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.breakpointsChanged(JavaDebugOptionsManager.java:762)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.run(BreakpointManager.java:1062)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.notify(BreakpointManager.java:1081)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:935)
+	at org.eclipse.debug.internal.core.BreakpointManager.access$4(BreakpointManager.java:922)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:778)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:688)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2013-09-03 19:08:57.356
+!MESSAGE Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-09-03 19:09:03.078
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:529)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.SourceMethod.isConstructor(SourceMethod.java:216)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendMethodLabel(JavaElementLabelComposer.java:378)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendElementLabel(JavaElementLabelComposer.java:270)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:518)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:491)
+	at org.eclipse.jdt.ui.JavaElementLabels.getTextLabel(JavaElementLabels.java:395)
+	at org.eclipse.jdt.ui.JavaElementLabelProvider.getText(JavaElementLabelProvider.java:255)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getMethodBreakpointText(JDIModelPresentation.java:1737)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getBreakpointText(JDIModelPresentation.java:1495)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getText(JDIModelPresentation.java:229)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager$2.run(JavaDebugOptionsManager.java:733)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.updateBreakpointMessages(JavaDebugOptionsManager.java:748)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.breakpointsChanged(JavaDebugOptionsManager.java:762)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.run(BreakpointManager.java:1062)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.notify(BreakpointManager.java:1081)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:935)
+	at org.eclipse.debug.internal.core.BreakpointManager.access$4(BreakpointManager.java:922)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:778)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:688)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2013-09-03 19:09:03.079
+!MESSAGE Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-09-03 19:10:50.138
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:529)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.SourceMethod.isConstructor(SourceMethod.java:216)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendMethodLabel(JavaElementLabelComposer.java:378)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendElementLabel(JavaElementLabelComposer.java:270)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:518)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:491)
+	at org.eclipse.jdt.ui.JavaElementLabels.getTextLabel(JavaElementLabels.java:395)
+	at org.eclipse.jdt.ui.JavaElementLabelProvider.getText(JavaElementLabelProvider.java:255)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getMethodBreakpointText(JDIModelPresentation.java:1737)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getBreakpointText(JDIModelPresentation.java:1495)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getText(JDIModelPresentation.java:229)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager$2.run(JavaDebugOptionsManager.java:733)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.updateBreakpointMessages(JavaDebugOptionsManager.java:748)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.breakpointsChanged(JavaDebugOptionsManager.java:762)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.run(BreakpointManager.java:1062)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.notify(BreakpointManager.java:1081)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:935)
+	at org.eclipse.debug.internal.core.BreakpointManager.access$4(BreakpointManager.java:922)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:778)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:688)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2013-09-03 19:10:50.139
+!MESSAGE Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-09-03 19:10:54.833
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:529)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.SourceMethod.isConstructor(SourceMethod.java:216)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendMethodLabel(JavaElementLabelComposer.java:378)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendElementLabel(JavaElementLabelComposer.java:270)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:518)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:491)
+	at org.eclipse.jdt.ui.JavaElementLabels.getTextLabel(JavaElementLabels.java:395)
+	at org.eclipse.jdt.ui.JavaElementLabelProvider.getText(JavaElementLabelProvider.java:255)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getMethodBreakpointText(JDIModelPresentation.java:1737)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getBreakpointText(JDIModelPresentation.java:1495)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getText(JDIModelPresentation.java:229)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager$2.run(JavaDebugOptionsManager.java:733)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.updateBreakpointMessages(JavaDebugOptionsManager.java:748)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.breakpointsChanged(JavaDebugOptionsManager.java:762)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.run(BreakpointManager.java:1062)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.notify(BreakpointManager.java:1081)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:935)
+	at org.eclipse.debug.internal.core.BreakpointManager.access$4(BreakpointManager.java:922)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:778)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:688)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2013-09-03 19:10:54.834
+!MESSAGE Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-09-03 19:16:19.149
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:529)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.SourceMethod.isConstructor(SourceMethod.java:216)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendMethodLabel(JavaElementLabelComposer.java:378)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendElementLabel(JavaElementLabelComposer.java:270)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:518)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:491)
+	at org.eclipse.jdt.ui.JavaElementLabels.getTextLabel(JavaElementLabels.java:395)
+	at org.eclipse.jdt.ui.JavaElementLabelProvider.getText(JavaElementLabelProvider.java:255)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getMethodBreakpointText(JDIModelPresentation.java:1737)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getBreakpointText(JDIModelPresentation.java:1495)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getText(JDIModelPresentation.java:229)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager$2.run(JavaDebugOptionsManager.java:733)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.updateBreakpointMessages(JavaDebugOptionsManager.java:748)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.breakpointsChanged(JavaDebugOptionsManager.java:762)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.run(BreakpointManager.java:1062)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.notify(BreakpointManager.java:1081)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:935)
+	at org.eclipse.debug.internal.core.BreakpointManager.access$4(BreakpointManager.java:922)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:778)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:688)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2013-09-03 19:16:19.150
+!MESSAGE Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-09-03 19:16:24.865
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:529)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.SourceMethod.isConstructor(SourceMethod.java:216)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendMethodLabel(JavaElementLabelComposer.java:378)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendElementLabel(JavaElementLabelComposer.java:270)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:518)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:491)
+	at org.eclipse.jdt.ui.JavaElementLabels.getTextLabel(JavaElementLabels.java:395)
+	at org.eclipse.jdt.ui.JavaElementLabelProvider.getText(JavaElementLabelProvider.java:255)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getMethodBreakpointText(JDIModelPresentation.java:1737)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getBreakpointText(JDIModelPresentation.java:1495)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getText(JDIModelPresentation.java:229)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager$2.run(JavaDebugOptionsManager.java:733)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.updateBreakpointMessages(JavaDebugOptionsManager.java:748)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.breakpointsChanged(JavaDebugOptionsManager.java:762)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.run(BreakpointManager.java:1062)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.notify(BreakpointManager.java:1081)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:935)
+	at org.eclipse.debug.internal.core.BreakpointManager.access$4(BreakpointManager.java:922)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:778)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:688)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2013-09-03 19:16:24.865
+!MESSAGE Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist
+!SESSION 2013-09-03 23:02:42.515 -----------------------------------------------
+eclipse.buildId=I20120502-2000
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-09-03 23:02:48.158
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2013-09-08 16:24:34.441 -----------------------------------------------
+eclipse.buildId=I20120502-2000
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-09-08 16:24:40.578
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-09-08 17:48:59.451
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:529)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.SourceMethod.isConstructor(SourceMethod.java:216)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendMethodLabel(JavaElementLabelComposer.java:378)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendElementLabel(JavaElementLabelComposer.java:270)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:518)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:491)
+	at org.eclipse.jdt.ui.JavaElementLabels.getTextLabel(JavaElementLabels.java:395)
+	at org.eclipse.jdt.ui.JavaElementLabelProvider.getText(JavaElementLabelProvider.java:255)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getMethodBreakpointText(JDIModelPresentation.java:1737)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getBreakpointText(JDIModelPresentation.java:1495)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getText(JDIModelPresentation.java:229)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager$2.run(JavaDebugOptionsManager.java:733)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.updateBreakpointMessages(JavaDebugOptionsManager.java:748)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.breakpointsChanged(JavaDebugOptionsManager.java:762)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.run(BreakpointManager.java:1062)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.notify(BreakpointManager.java:1081)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:935)
+	at org.eclipse.debug.internal.core.BreakpointManager.access$4(BreakpointManager.java:922)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:778)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:688)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2013-09-08 17:48:59.453
+!MESSAGE Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-09-08 17:49:07.317
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:529)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.SourceMethod.isConstructor(SourceMethod.java:216)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendMethodLabel(JavaElementLabelComposer.java:378)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendElementLabel(JavaElementLabelComposer.java:270)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:518)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:491)
+	at org.eclipse.jdt.ui.JavaElementLabels.getTextLabel(JavaElementLabels.java:395)
+	at org.eclipse.jdt.ui.JavaElementLabelProvider.getText(JavaElementLabelProvider.java:255)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getMethodBreakpointText(JDIModelPresentation.java:1737)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getBreakpointText(JDIModelPresentation.java:1495)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getText(JDIModelPresentation.java:229)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager$2.run(JavaDebugOptionsManager.java:733)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.updateBreakpointMessages(JavaDebugOptionsManager.java:748)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.breakpointsChanged(JavaDebugOptionsManager.java:762)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.run(BreakpointManager.java:1062)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.notify(BreakpointManager.java:1081)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:935)
+	at org.eclipse.debug.internal.core.BreakpointManager.access$4(BreakpointManager.java:922)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:778)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:688)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2013-09-08 17:49:07.317
+!MESSAGE Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-09-08 19:25:52.514
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:529)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.SourceMethod.isConstructor(SourceMethod.java:216)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendMethodLabel(JavaElementLabelComposer.java:378)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendElementLabel(JavaElementLabelComposer.java:270)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:518)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:491)
+	at org.eclipse.jdt.ui.JavaElementLabels.getTextLabel(JavaElementLabels.java:395)
+	at org.eclipse.jdt.ui.JavaElementLabelProvider.getText(JavaElementLabelProvider.java:255)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getMethodBreakpointText(JDIModelPresentation.java:1737)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getBreakpointText(JDIModelPresentation.java:1495)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getText(JDIModelPresentation.java:229)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager$2.run(JavaDebugOptionsManager.java:733)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.updateBreakpointMessages(JavaDebugOptionsManager.java:748)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.breakpointsChanged(JavaDebugOptionsManager.java:762)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.run(BreakpointManager.java:1062)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.notify(BreakpointManager.java:1081)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:935)
+	at org.eclipse.debug.internal.core.BreakpointManager.access$4(BreakpointManager.java:922)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:778)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:688)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2013-09-08 19:25:52.514
+!MESSAGE Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-09-08 19:25:58.782
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:529)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.SourceMethod.isConstructor(SourceMethod.java:216)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendMethodLabel(JavaElementLabelComposer.java:378)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendElementLabel(JavaElementLabelComposer.java:270)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:518)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:491)
+	at org.eclipse.jdt.ui.JavaElementLabels.getTextLabel(JavaElementLabels.java:395)
+	at org.eclipse.jdt.ui.JavaElementLabelProvider.getText(JavaElementLabelProvider.java:255)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getMethodBreakpointText(JDIModelPresentation.java:1737)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getBreakpointText(JDIModelPresentation.java:1495)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getText(JDIModelPresentation.java:229)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager$2.run(JavaDebugOptionsManager.java:733)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.updateBreakpointMessages(JavaDebugOptionsManager.java:748)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.breakpointsChanged(JavaDebugOptionsManager.java:762)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.run(BreakpointManager.java:1062)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.notify(BreakpointManager.java:1081)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:935)
+	at org.eclipse.debug.internal.core.BreakpointManager.access$4(BreakpointManager.java:922)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:778)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:688)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2013-09-08 19:25:58.782
+!MESSAGE Unit() [in Unit [in [Working copy] Unit.java [in stuff [in src [in hexagon]]]]] does not exist
+!SESSION 2013-12-20 15:00:15.965 -----------------------------------------------
+eclipse.buildId=I20120502-2000
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-12-20 15:04:25.135
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unit() [in Unit [in Unit.java [in stuff [in src [in hexagon]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:529)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.SourceMethod.isConstructor(SourceMethod.java:216)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendMethodLabel(JavaElementLabelComposer.java:378)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendElementLabel(JavaElementLabelComposer.java:270)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:518)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:491)
+	at org.eclipse.jdt.ui.JavaElementLabels.getTextLabel(JavaElementLabels.java:395)
+	at org.eclipse.jdt.ui.JavaElementLabelProvider.getText(JavaElementLabelProvider.java:255)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getMethodBreakpointText(JDIModelPresentation.java:1737)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getBreakpointText(JDIModelPresentation.java:1495)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getText(JDIModelPresentation.java:229)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager$2.run(JavaDebugOptionsManager.java:733)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.updateBreakpointMessages(JavaDebugOptionsManager.java:748)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.breakpointsChanged(JavaDebugOptionsManager.java:762)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.run(BreakpointManager.java:1062)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.notify(BreakpointManager.java:1081)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:935)
+	at org.eclipse.debug.internal.core.BreakpointManager.access$4(BreakpointManager.java:922)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:778)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:688)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2013-12-20 15:04:25.143
+!MESSAGE Unit() [in Unit [in Unit.java [in stuff [in src [in hexagon]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-12-20 15:04:30.015
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unit() [in Unit [in Unit.java [in stuff [in src [in hexagon]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:529)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.SourceMethod.isConstructor(SourceMethod.java:216)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendMethodLabel(JavaElementLabelComposer.java:378)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendElementLabel(JavaElementLabelComposer.java:270)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:518)
+	at org.eclipse.jdt.ui.JavaElementLabels.getElementLabel(JavaElementLabels.java:491)
+	at org.eclipse.jdt.ui.JavaElementLabels.getTextLabel(JavaElementLabels.java:395)
+	at org.eclipse.jdt.ui.JavaElementLabelProvider.getText(JavaElementLabelProvider.java:255)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getMethodBreakpointText(JDIModelPresentation.java:1737)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getBreakpointText(JDIModelPresentation.java:1495)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getText(JDIModelPresentation.java:229)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager$2.run(JavaDebugOptionsManager.java:733)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.updateBreakpointMessages(JavaDebugOptionsManager.java:748)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.breakpointsChanged(JavaDebugOptionsManager.java:762)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.run(BreakpointManager.java:1062)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointsNotifier.notify(BreakpointManager.java:1081)
+	at org.eclipse.debug.internal.core.BreakpointManager.fireUpdate(BreakpointManager.java:935)
+	at org.eclipse.debug.internal.core.BreakpointManager.access$4(BreakpointManager.java:922)
+	at org.eclipse.debug.internal.core.BreakpointManager$BreakpointManagerVisitor.update(BreakpointManager.java:778)
+	at org.eclipse.debug.internal.core.BreakpointManager.resourceChanged(BreakpointManager.java:688)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:146)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2013-12-20 15:04:30.015
+!MESSAGE Unit() [in Unit [in Unit.java [in stuff [in src [in hexagon]]]]] does not exist
+!SESSION 2013-12-20 15:25:44.369 -----------------------------------------------
+eclipse.buildId=I20120502-2000
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2013-12-20 15:26:15.825
+!MESSAGE Warnings while parsing the viewer contributions from the 'org.eclipse.ui.popupMenus' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-20 15:26:15.825
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-20 15:26:15.825
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-20 15:26:15.825
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.ui.actions.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-20 15:26:15.825
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-20 15:26:15.826
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-20 15:26:15.826
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.ui.actions.asm.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-20 15:26:15.826
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='AUTOGEN:::org.eclipse.cdt.dsf.debug.ui.disassemblyRulerActions/org.eclipse.debug.ui.actions.RulerAddBreakpointAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-20 15:26:15.826
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='org.eclipse.cdt.dsf.debug.ui.disassembly.commands.rulerToggleBreakpoint'
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-12-20 15:28:59.649
+!MESSAGE Indexed 'graphics' (1 sources, 100 headers) in 5.97 sec: 8,170 declarations; 14,283 references; 0 unresolved inclusions; 6 syntax errors; 12 unresolved names (0.05%)
+
+!ENTRY org.eclipse.help.base 4 0 2013-12-20 15:29:36.875
+!MESSAGE An error occured while pre-processing help XHTML document "/org.eclipse.cdt.doc.user/concepts/cdt_c_whatsnew.htm" for search indexing
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 95; columnNumber: 36; The reference to entity "gt" must end with the ';' delimiter.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:253)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:288)
+	at org.eclipse.help.internal.dynamic.DocumentReader.read(DocumentReader.java:56)
+	at org.eclipse.help.internal.dynamic.XMLProcessor.process(XMLProcessor.java:49)
+	at org.eclipse.help.internal.xhtml.DynamicXHTMLProcessor.process(DynamicXHTMLProcessor.java:76)
+	at org.eclipse.help.internal.search.XHTMLSearchParticipant.preprocess(XHTMLSearchParticipant.java:106)
+	at org.eclipse.help.search.SearchParticipantXML.addDocument(SearchParticipantXML.java:296)
+	at org.eclipse.help.internal.search.HTMLSearchParticipant.addDocument(HTMLSearchParticipant.java:51)
+	at org.eclipse.help.internal.search.SearchIndex.addDocument(SearchIndex.java:231)
+	at org.eclipse.help.internal.search.IndexingOperation.addDocuments(IndexingOperation.java:252)
+	at org.eclipse.help.internal.search.IndexingOperation.addNewDocuments(IndexingOperation.java:159)
+	at org.eclipse.help.internal.search.IndexingOperation.execute(IndexingOperation.java:106)
+	at org.eclipse.help.internal.search.LocalSearchManager.updateIndex(LocalSearchManager.java:671)
+	at org.eclipse.help.internal.search.LocalSearchManager.ensureIndexUpdated(LocalSearchManager.java:645)
+	at org.eclipse.help.internal.search.federated.IndexerJob.run(IndexerJob.java:31)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help documentation could not be indexed completely.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.ui.examples.propertysheet/doc-html/ui_propertysheet_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples/doc-html/swt_helloworld_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples/doc-html/swt_fileviewer_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples/doc-html/swt_javaviewer_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.compare.examples.xml/doc-html/ui_xmlcompare_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples.controls/doc-html/swt_customcontrols_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples.browser/doc-html/swt_browser_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.ui.examples.readmetool/doc-html/ui_readmetool_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.team.examples.filesystem/doc-html/team_localhistory_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.team.examples.filesystem/doc-html/team_model_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples/doc-html/swt_texteditor_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help document /org.eclipse.platform.doc.isv/reference/api/org/eclipse/swt/opengl/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Help document /org.eclipse.rse.doc.isv/reference/api/org/eclipse/rse/core/servicesubsystem/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.183
+!MESSAGE Exception occurred while adding document /org.eclipse.cdt.doc.user/concepts/cdt_c_whatsnew.htm to index.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:391)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1404)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1014)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:625)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:488)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:819)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:748)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1208)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:525)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:392)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:195)
+	at org.eclipse.help.search.SearchParticipantXML.addDocument(SearchParticipantXML.java:297)
+	at org.eclipse.help.internal.search.HTMLSearchParticipant.addDocument(HTMLSearchParticipant.java:51)
+	at org.eclipse.help.internal.search.SearchIndex.addDocument(SearchIndex.java:231)
+	at org.eclipse.help.internal.search.IndexingOperation.addDocuments(IndexingOperation.java:252)
+	at org.eclipse.help.internal.search.IndexingOperation.addNewDocuments(IndexingOperation.java:159)
+	at org.eclipse.help.internal.search.IndexingOperation.execute(IndexingOperation.java:106)
+	at org.eclipse.help.internal.search.LocalSearchManager.updateIndex(LocalSearchManager.java:671)
+	at org.eclipse.help.internal.search.LocalSearchManager.ensureIndexUpdated(LocalSearchManager.java:645)
+	at org.eclipse.help.internal.search.federated.IndexerJob.run(IndexerJob.java:31)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.compare.examples/doc-html/ui_structurecreator_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples.layouts/doc-html/swt_layout_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples/doc-html/swt_addressbook_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples.ole.win32/doc-html/swt_ole_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.ui.examples.javaeditor/doc-html/ui_javaeditor_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples.paint/doc-html/swt_paint_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples.launcher/doc-html/swt_launcher_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples/doc-html/swt_hoverhelp_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples/doc-html/swt_imageanalyzer_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.ui.examples.multipageeditor/doc-html/ui_multipageeditor_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/reference/api/org/eclipse/swt/ole/win32/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples/doc-html/swt_manual_setup.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/reference/api/org/eclipse/swt/awt/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.ui.examples.javaeditor/doc-html/ui_templateeditor_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.ui.examples.fieldassist/doc-html/ui_fieldassist_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.ui.examples.undo/doc-html/ui_undo_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples/doc-html/swt_clipboard_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.team.examples.filesystem/doc-html/team_filesystem_ex.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2013-12-20 15:29:37.184
+!MESSAGE Help document /org.eclipse.platform.doc.isv/samples/org.eclipse.swt.examples.controls/doc-html/swt_controls_ex.html cannot be opened.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2013-12-20 16:20:58.651
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.contexts.DsfSuspendTrigger$2@107cb98): Status ERROR: org.eclipse.cdt.dsf code=10005 Composite status null children=[Status ERROR: org.eclipse.cdt.dsf.gdb.ui code=10001 Not available null Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.contexts.DsfSuspendTrigger$6@1273fae): Status ERROR: org.eclipse.cdt.dsf.gdb.ui code=10001 Not available null' resulted in a rejected execution exception. null]' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb.ui 4 10001 2013-12-20 16:20:58.651
+!MESSAGE Not available
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10005 2013-12-20 16:20:58.651
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.contexts.DsfSuspendTrigger$6@1273fae): Status ERROR: org.eclipse.cdt.dsf.gdb.ui code=10001 Not available null' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2013-12-20 16:20:58.752
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: /home/zane/hacking/eclipse/graphics/Debug/graphics not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:124)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:286)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:143)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2013-12-20 16:20:58.753
+!MESSAGE /home/zane/hacking/eclipse/graphics/Debug/graphics not found
+!STACK 0
+java.io.FileNotFoundException: /home/zane/hacking/eclipse/graphics/Debug/graphics not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:124)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:286)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:143)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2013-12-21 16:35:07.764 -----------------------------------------------
+eclipse.buildId=I20120502-2000
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-12-21 16:35:21.685
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2013-12-21 16:35:25.060
+!MESSAGE Warnings while parsing the viewer contributions from the 'org.eclipse.ui.popupMenus' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 16:35:25.060
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 16:35:25.060
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 16:35:25.060
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.ui.actions.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 16:35:25.060
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 16:35:25.060
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 16:35:25.060
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.ui.actions.asm.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 16:35:25.060
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='AUTOGEN:::org.eclipse.cdt.dsf.debug.ui.disassemblyRulerActions/org.eclipse.debug.ui.actions.RulerAddBreakpointAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 16:35:25.060
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='org.eclipse.cdt.dsf.debug.ui.disassembly.commands.rulerToggleBreakpoint'
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-12-21 16:38:07.190
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-12-21 16:38:07.190
+!MESSAGE Conflict for 'org.eclipse.ltk.ui.refactor.create.refactoring.script':
+HandlerActivation(commandId=org.eclipse.ltk.ui.refactor.create.refactoring.script,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.jdt.internal.ui.refactoring.actions.CreateRefactoringScriptAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.jdt.ui.CodingActionSet,org.eclipse.ui.internal.WorkbenchWindow@b3ae5c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b3ae5c)),sourcePriority=16640)
+HandlerActivation(commandId=org.eclipse.ltk.ui.refactor.create.refactoring.script,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ltk.ui.refactoring.actions.CreateRefactoringScriptAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.cdt.ui.CodingActionSet,org.eclipse.ui.internal.WorkbenchWindow@b3ae5c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b3ae5c)),sourcePriority=16640)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-12-21 16:38:07.190
+!MESSAGE Conflict for 'org.eclipse.ltk.ui.refactor.show.refactoring.history':
+HandlerActivation(commandId=org.eclipse.ltk.ui.refactor.show.refactoring.history,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ltk.ui.refactoring.actions.ShowRefactoringHistoryAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.cdt.ui.CodingActionSet,org.eclipse.ui.internal.WorkbenchWindow@b3ae5c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b3ae5c)),sourcePriority=16640)
+HandlerActivation(commandId=org.eclipse.ltk.ui.refactor.show.refactoring.history,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.jdt.internal.ui.refactoring.actions.ShowRefactoringHistoryAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.jdt.ui.CodingActionSet,org.eclipse.ui.internal.WorkbenchWindow@b3ae5c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b3ae5c)),sourcePriority=16640)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-12-21 16:38:07.190
+!MESSAGE Conflict for 'org.eclipse.ltk.ui.refactor.apply.refactoring.script':
+HandlerActivation(commandId=org.eclipse.ltk.ui.refactor.apply.refactoring.script,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ltk.ui.refactoring.actions.ApplyRefactoringScriptAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.cdt.ui.CodingActionSet,org.eclipse.ui.internal.WorkbenchWindow@b3ae5c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b3ae5c)),sourcePriority=16640)
+HandlerActivation(commandId=org.eclipse.ltk.ui.refactor.apply.refactoring.script,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.jdt.internal.ui.refactoring.actions.ApplyRefactoringScriptAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.jdt.ui.CodingActionSet,org.eclipse.ui.internal.WorkbenchWindow@b3ae5c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b3ae5c)),sourcePriority=16640)
+!SESSION 2013-12-21 18:25:38.810 -----------------------------------------------
+eclipse.buildId=I20120502-2000
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2013-12-21 18:25:49.963
+!MESSAGE Warnings while parsing the viewer contributions from the 'org.eclipse.ui.popupMenus' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 18:25:49.964
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 18:25:49.964
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 18:25:49.964
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.ui.actions.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 18:25:49.964
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 18:25:49.964
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 18:25:49.964
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.ui.actions.asm.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 18:25:49.964
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='AUTOGEN:::org.eclipse.cdt.dsf.debug.ui.disassemblyRulerActions/org.eclipse.debug.ui.actions.RulerAddBreakpointAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-12-21 18:25:49.964
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='org.eclipse.cdt.dsf.debug.ui.disassembly.commands.rulerToggleBreakpoint'
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-12-21 18:27:08.832
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-12-21 18:27:08.832
+!MESSAGE Conflict for 'org.eclipse.ltk.ui.refactor.create.refactoring.script':
+HandlerActivation(commandId=org.eclipse.ltk.ui.refactor.create.refactoring.script,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.jdt.internal.ui.refactoring.actions.CreateRefactoringScriptAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.jdt.ui.CodingActionSet,org.eclipse.ui.internal.WorkbenchWindow@1b8119a),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1b8119a)),sourcePriority=16640)
+HandlerActivation(commandId=org.eclipse.ltk.ui.refactor.create.refactoring.script,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ltk.ui.refactoring.actions.CreateRefactoringScriptAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.cdt.ui.CodingActionSet,org.eclipse.ui.internal.WorkbenchWindow@1b8119a),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1b8119a)),sourcePriority=16640)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-12-21 18:27:08.832
+!MESSAGE Conflict for 'org.eclipse.ltk.ui.refactor.show.refactoring.history':
+HandlerActivation(commandId=org.eclipse.ltk.ui.refactor.show.refactoring.history,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ltk.ui.refactoring.actions.ShowRefactoringHistoryAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.cdt.ui.CodingActionSet,org.eclipse.ui.internal.WorkbenchWindow@1b8119a),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1b8119a)),sourcePriority=16640)
+HandlerActivation(commandId=org.eclipse.ltk.ui.refactor.show.refactoring.history,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.jdt.internal.ui.refactoring.actions.ShowRefactoringHistoryAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.jdt.ui.CodingActionSet,org.eclipse.ui.internal.WorkbenchWindow@1b8119a),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1b8119a)),sourcePriority=16640)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-12-21 18:27:08.832
+!MESSAGE Conflict for 'org.eclipse.ltk.ui.refactor.apply.refactoring.script':
+HandlerActivation(commandId=org.eclipse.ltk.ui.refactor.apply.refactoring.script,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ltk.ui.refactoring.actions.ApplyRefactoringScriptAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.cdt.ui.CodingActionSet,org.eclipse.ui.internal.WorkbenchWindow@1b8119a),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1b8119a)),sourcePriority=16640)
+HandlerActivation(commandId=org.eclipse.ltk.ui.refactor.apply.refactoring.script,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.jdt.internal.ui.refactoring.actions.ApplyRefactoringScriptAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.jdt.ui.CodingActionSet,org.eclipse.ui.internal.WorkbenchWindow@1b8119a),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1b8119a)),sourcePriority=16640)
+
+!ENTRY org.eclipse.core.resources 4 376 2013-12-21 21:39:11.837
+!MESSAGE Marker id 2118 not found.

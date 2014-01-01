@@ -1,0 +1,59 @@
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+
+public class Perlin {
+
+	public static void main(String[] args) {
+		
+		JFrame frame = new JFrame("Perlin");
+		PerlinCanvas canvas = new PerlinCanvas(frame);
+
+		frame.add(canvas);
+		frame.pack();
+		frame.setResizable(false);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+		
+		double[] noise = generateNoise(canvas.getPreferredSize());
+		canvas.render(noise);
+		for (double d : noise)
+			System.out.println(d);
+	}
+	
+	public static double[] generateNoise(Dimension size) {
+
+		double[] noise = new double[size.width];
+		int width = size.width;
+		int points = 8;
+		int depth = 4;
+		
+		for (int d = 0; d < depth; d++) {
+			double[] noise_d = new double[size.width];
+			int iterPoints = points * (int)Math.pow(2, d);
+			int dx = width / iterPoints;
+			
+			for (int i = 0; i < iterPoints; i++)
+				noise_d[i * width / iterPoints] = Math.random();
+			for (int i = 0; i < iterPoints; i++)
+				for (int j = 1; j < dx; j++)
+					noise_d[i*dx + j] = cosInterpolate(noise_d[i*dx],
+													   noise_d[(i+1)*dx],
+													   j / (double)dx);
+			for (int i = 0; i < width; i++)
+				noise[i] += noise_d[i] * Math.pow(2, -d);
+		}
+		
+		for (int i = 0; i < width; i++)
+			noise[i] /= 2;
+		
+		return noise;
+	}
+	
+	public static double cosInterpolate(double a, double b, double x) {
+		double ft = x * Math.PI;
+		double f = (1 - Math.cos(ft)) * .5;
+	
+		return  a*(1-f) + b*f;
+	}
+}

@@ -1,0 +1,31 @@
+package stuff;
+
+public class Skill {
+	
+	private static final int EASY = 0;
+	private static final int AVERAGE = 1;
+	private static final int HARD = 2;
+
+	String name;
+	int modifier;
+	int difficulty;
+	
+	public Skill(String name, int modifier, int difficulty) {
+		this.name = name;
+		this.modifier = modifier;
+		this.difficulty = difficulty;
+	}
+	
+	public int cost() {
+		int mod = modifier + difficulty;
+		
+		if (mod < 4)
+			return 2 ^ mod;
+		else
+			return 8 * (mod - 2);
+	}
+
+	public String toString() {
+		return name + " " + modifier + " " + difficulty;
+	}
+}

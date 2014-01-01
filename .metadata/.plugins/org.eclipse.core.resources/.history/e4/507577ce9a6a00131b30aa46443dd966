@@ -1,0 +1,26 @@
+import java.awt.Dimension;
+import java.awt.Graphics;
+
+public class Screen {
+	
+	private int width;
+	private int height;
+	
+	PerlinCanvas parent;
+	
+	public Screen(PerlinCanvas parent) {
+		this.parent = parent;
+		Dimension size = parent.getPreferredSize();
+		width = size.width;
+		height = size.height;
+	}
+	
+	public void render(Graphics g, float[][] data) {
+		if (data.length != height)
+			return;
+		if (data[0].length != height)
+			return;
+		
+		
+	}
+}

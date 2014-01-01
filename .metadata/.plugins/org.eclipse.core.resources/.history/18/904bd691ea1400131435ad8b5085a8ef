@@ -1,0 +1,286 @@
+package stuff;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Unit {
+	
+	private static final int[] abilityCosts =
+			new int[]{-20, -15, -10, 0, 10, 20, 30, 45, 60, 80, 100};
+
+	int characterPoints;
+	
+	int[] attributes;
+	
+	//advantages
+	boolean ambidexterity;
+	boolean combatReflexes;
+	boolean peripheralVision;
+	int toughness;
+	
+	//skill modifiers
+	ArrayList<Skill> skills;
+	
+	boolean newOrChanged;
+	
+	public Unit() {
+		attributes = new int[4];
+		for (int i = 0; i < attributes.length; i++)
+			attributes[i] = 10;
+		
+		skills = new ArrayList<Skill>();
+	}
+	
+	public Unit(int pointTotal) {
+		this();
+		characterPoints = pointTotal;
+		newOrChanged = true;
+	}
+	
+	//load unit from file
+	public Unit(String fn) {
+		this();
+		
+		try {
+			Scanner sc = new Scanner(new File(fn));
+			
+			characterPoints = sc.nextInt();
+			
+			for (int i = 0; i<attributes.length; i++)
+				attributes[i] = sc.nextInt();
+			
+			ambidexterity    = sc.nextBoolean();
+			combatReflexes   = sc.nextBoolean();
+			peripheralVision = sc.nextBoolean();
+			toughness		 = sc.nextInt();
+			
+			int numSkills = sc.nextInt();
+			for (int i=0; i<numSkills; i++) {
+				String name    = sc.next();
+				int modifier   = sc.nextInt();
+				int difficulty = sc.nextInt();
+				
+				skills.add(new Skill(name, modifier, difficulty));
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public boolean setAttribute(int ability, int score) {
+		if (score < 7)
+			return false;
+		
+		int curScore = attributes[ability];
+		int cost = 0;
+		
+		if (curScore > 17) {
+			cost -= (curScore - 17) * 25;
+			curScore = 17;
+		}
+		
+		cost -= abilityCosts[curScore - 7];
+		
+		if (score > 17) {
+			cost += (score- 17) * 25;
+			score = 17;
+		}
+		
+		cost += abilityCosts[score - 7];
+		
+		if (cost > characterPoints)
+			return false;
+		
+		characterPoints -= cost;
+		newOrChanged = true;
+		
+		return true;
+	}
+	
+	public boolean setAmbidexterity(boolean on) {
+		if (!on) {
+			if (!ambidexterity)
+				return true;
+			
+			characterPoints += 10;
+			ambidexterity = false;
+			newOrChanged = true;
+			return true;
+		} else {
+			if (ambidexterity)
+				return true;
+			
+			if (characterPoints < 10)
+				return false;
+			
+			characterPoints -= 10;
+			newOrChanged = true;
+			return true;
+		}
+	}
+	
+	public boolean setCombatReflexes(boolean on) {
+		if (!on) {
+			if (!combatReflexes)
+				return true;
+			
+			characterPoints += 15;
+			combatReflexes = false;
+			newOrChanged = true;
+			return true;
+		} else {
+			if (combatReflexes)
+				return true;
+			
+			if (characterPoints < 15)
+				return false;
+			characterPoints -= 15;
+			newOrChanged = true;
+			return true;
+		}
+	}
+	
+	public boolean setPeripheralVision(boolean on) {
+		if (!on) {
+			if (!peripheralVision)
+				return true;
+			
+			characterPoints += 15;
+			peripheralVision = false;
+			return true;
+		} else {
+			if (peripheralVision)
+				return true;
+			
+			if (characterPoints >= 15) {
+				characterPoints -= 15;
+				return true;
+			} else
+				return false;
+		}
+	}
+	
+	public boolean setToughness(int level) {
+		if (level == toughness)
+			return true;
+		
+		if (level < 0)
+			return false;
+
+		int cost = 0;
+		
+		if (toughness >= 1)
+			cost -= 10;
+		
+		if (toughness >= 2)
+			cost -= 15;
+		
+		cost -= 25 * (toughness - 2);
+		
+		if (level >= 1)
+			cost += 10;
+		
+		if (level >= 2)
+			cost += 15;
+		
+		cost += 25 * (level - 2);
+		
+		if (cost > characterPoints)
+			return false;
+		
+		characterPoints -= cost;
+		return true;
+	}
+
+	public boolean addSkill(String name, int modifier, int difficulty) {
+		for (Skill s : skills)
+			if (s.name.equals(name) && s.difficulty == difficulty) {
+				int cost = s.cost();
+				int temp = s.modifier;
+				s.modifier = modifier;
+				
+				int cost = s.cost();
+				if (cost > characterPoints) {
+					s.modifier = temp;
+					return false;
+				}
+				
+				characterPoints -= cost;
+				newOrChanged = true;
+				return true;
+			}
+		
+		Skill s = new Skill(name, modifier, difficulty);
+		int cost = s.cost();
+		
+		if (cost > characterPoints)
+			return false;
+		
+		characterPoints -= cost;
+		skills.add(s);
+		newOrChanged = true;
+		return true;
+	}
+	public void addSkill(Skill s) {
+		for (Skill t : skills)
+			if (t == s)
+				return;
+		
+		skills.add(s);
+		newOrChanged = true;
+	}
+	
+	
+	public void save(String fn) {
+		try {
+			FileWriter fw = new FileWriter(new File(fn));
+			fw.write(toString());
+			fw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public Unit clone() {
+		Unit u = new Unit(characterPoints);
+		
+		for (int i=0; i<4; i++)
+			u.setAttribute(i, attributes[i]);
+		
+		u.ambidexterity = this.ambidexterity;
+		u.combatReflexes = this.combatReflexes;
+		u.peripheralVision = this.peripheralVision;
+		u.toughness = this.toughness;
+		
+		for (int i=0; i< skills.size(); i++) {
+			Skill s = skills.get(i);
+			Skill t = s.clone();
+			
+			u.addSkill(t);
+		}
+		
+		return u;
+	}
+	
+	public String toString() {
+		String s = characterPoints + "\n";
+		
+		for (int a : attributes)
+			s += a + " ";
+		s = s.substring(0, s.length() - 1) + "\n";
+		
+		s += ambidexterity + "\n";
+		s += combatReflexes + "\n";
+		s += peripheralVision + "\n";
+		s += toughness + "\n";
+		
+		s += skills.size() + "\n";
+		for (Skill skill : skills)
+			s += skill + "\n";
+		
+		return s;
+	}
+}

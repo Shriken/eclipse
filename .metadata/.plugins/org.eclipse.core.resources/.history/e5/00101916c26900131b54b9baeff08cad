@@ -1,0 +1,19 @@
+/*
+ * actor.cpp
+ *
+ *  Created on: Dec 20, 2013
+ *      Author: zane
+ */
+
+#include "actor.h"
+#include "graphics.h"
+
+void Actor::setPosition(float x, float y) {
+	this->x = x;
+	this->y = y;
+	heading = 0;
+}
+
+void Actor::update(Actor target) {
+	heading = atan2(target.x - x, target.y - y);
+}

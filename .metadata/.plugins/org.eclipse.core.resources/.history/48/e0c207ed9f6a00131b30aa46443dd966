@@ -1,0 +1,39 @@
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+
+public class Perlin {
+
+	public static void main(String[] args) {
+		
+		JFrame frame = new JFrame("Perlin");
+		PerlinCanvas canvas = new PerlinCanvas(frame);
+
+		frame.add(canvas);
+		frame.pack();
+		frame.setResizable(false);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+		
+		double[] noise = generateNoise(canvas.getPreferredSize());
+		canvas.render(noise);
+		for (double d : noise)
+			System.out.println(d);
+	}
+	
+	public static double[] generateNoise(Dimension size) {
+
+		double[] noise = new double[size.width];
+
+		
+		
+		return noise;
+	}
+	
+	public static double cosInterpolate(double a, double b, double x) {
+		double ft = x * Math.PI;
+		double f = (1 - Math.cos(ft)) * .5;
+	
+		return  a*(1-f) + b*f;
+	}
+}

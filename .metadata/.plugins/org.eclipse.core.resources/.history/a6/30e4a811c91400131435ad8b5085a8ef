@@ -1,0 +1,8 @@
+package stuff;
+
+public class Skill {
+
+	public Skill(String name, int modifier, int difficulty) {
+		
+	}
+}

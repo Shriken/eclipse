@@ -1,0 +1,21 @@
+
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+
+public class Screen {
+	
+	private int width;
+	private int height;
+	
+	PerlinCanvas parent;
+	BufferedImage buffer;
+	Graphics renderGraphics;
+	
+	public Screen(PerlinCanvas parent) {
+		this.parent = parent;
+		
+		buffer = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+	}
+}

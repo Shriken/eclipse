@@ -1,0 +1,35 @@
+import javax.swing.JFrame;
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+
+public class PerlinCanvas extends Canvas {
+
+	private static final long serialVersionUID = 1L;	
+	private static final int WIDTH = 800;
+	private static final int HEIGHT = 600;
+
+	public PerlinCanvas(JFrame frame) {
+		
+		Dimension size = new Dimension(WIDTH, HEIGHT);
+		frame.setPreferredSize(size);
+		frame.setMinimumSize(size);
+		frame.setMaximumSize(size);
+		setPreferredSize(size);
+	}
+	
+	public void render(float[][] data) {
+		
+		if (data.length != HEIGHT)
+			return;
+		if (data[0].length != WIDTH)
+			return;
+		
+		Graphics g = getGraphics();
+		
+		for (int i = 0; i < data.length; i++)
+			for (int j = 0; j < data[0].length; j++)
+				g.setColor(new Color(0f, 0f, data[i][j]));
+	}
+}

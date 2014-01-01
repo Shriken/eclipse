@@ -1,0 +1,12 @@
+/*
+ * actor.cpp
+ *
+ *  Created on: Dec 20, 2013
+ *      Author: zane
+ */
+
+#include "actor.h"
+
+Actor::setPosition(float x, float y) {
+
+}

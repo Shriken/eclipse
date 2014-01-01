@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+/home/zane/hacking/eclipse/.metadata/.plugins/org.eclipse.jdt.core
+3940281858.index
+514472685.index
+1621599509.index
